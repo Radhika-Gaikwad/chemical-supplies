@@ -1,0 +1,89 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+table .table-dark{
+  cursor:pointer
+}
+/* Style for the chemical inventory title */
+.inventory-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #000000 !important; 
+  text-transform: capitalize;  
+ /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  margin-right: 20px;
+}
+
+
+
+tr.highlight {
+  background-color: rgb(219, 238, 245) !important;
+}
+
+.btn {
+  border: none; 
+  transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+  background-color: rgba(3, 0, 0, 0.1); 
+}
+
+.btn:focus {
+  outline: none; 
+  box-shadow: none; 
+}
+
+.btn:active {
+  transform: scale(0.95); 
+}
+
+.unit-text {
+  font-size: 0.75rem; 
+  color: grey;        
+}
+
+
+
+.toolbar .buttons .btn {
+  width: 50px; 
+  height: 40px;
+  font-size: 23px;
+ 
+}
+
+
+
+@media (max-width: 768px) {
+  .inventory-title {
+    font-size: 1.8rem;
+  }
+
+  .toolbar .buttons .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+  }
+
+  .table th, .table td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .inventory-title {
+    font-size: 1rem;
+  }
+
+  .toolbar .buttons .btn {
+    width: 0.7rem;
+    height: 0.9rem;
+    font-size: 0.4rem;
+   
+  }
+
+  .table th, .table td {
+    font-size: 0.5rem;
+  }
+}
